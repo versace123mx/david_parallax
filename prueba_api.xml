@@ -1,0 +1,120 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>580477806</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">xozXYTH5kRLXGLycq1voxu52VDOqo2a9RfwMNLKp</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <HotelReservation LastModifyDateTime="2015-12-27T21:27:39-12:00" CreateDateTime="2015-12-27T21:27:38-12:00" ResStatus="Book">
+            <POS>
+                <Source>
+                    <RequestorID Type="22" ID="HotelRunner" />
+                    <BookingChannel Primary="true" Type="7">
+                        <CompanyName Code="admin" ChannelDisplay="Admin">
+                 admin       
+               </CompanyName>
+                    </BookingChannel>
+                </Source>
+            </POS>
+            <UniqueID Type="14" ID="R587232632" />
+            <UniqueID Type="16" ID="85d805bce5b34a6ada8ae3e1fcae1fb5" ID_Context="MESSAGE_UNIQUE_ID" />
+            <RoomStays>
+                <RoomStay RoomStayStatus="Book">
+                    <RoomTypes>
+                        <RoomType RoomType="Room YB" RoomTypeCode="HR:10243" />
+                    </RoomTypes>
+                    <RatePlans>
+                        <RatePlan RatePlanCode="10271:HR:10243" RoomTypeCode="HR:10243" EffectiveDate="2015-12-28" ExpireDate="2015-12-29" />
+                    </RatePlans>
+                    <RoomRates>
+                        <RoomRate RoomTypeCode="HR:10243" RatePlanCode="10271:HR:10243" NumberOfUnits="1">
+                            <Rates>
+                                <Rate UnitMultiplier="1" RateTimeUnit="Day" EffectiveDate="2015-12-28" ExpireDate="2015-12-28">
+                                    <Total AmountAfterTax="33.0" CurrencyCode="AUD" />
+                                </Rate>
+                            </Rates>
+                        </RoomRate>
+                    </RoomRates>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2" />
+                    </GuestCounts>
+                    <TimeSpan start="2015-12-28" end="2015-12-29" />
+                    <Total AmountBeforeTax="30.0" AmountAfterTax="33.0" CurrencyCode="AUD" />
+                    <ResGuestRPHs>
+                        <ResGuestRPH RPH="1" />
+                    </ResGuestRPHs>
+                    <AdditionalDetails>
+                        <AdditionalDetail Type="1" NonRefundable="false" />
+                    </AdditionalDetails>
+                    <AdditionalDetails>
+                        <AdditionalDetail Type="43">
+                            <DetailDescription>
+                                <Text />
+                            </DetailDescription>
+                        </AdditionalDetail>
+                    </AdditionalDetails>
+                </RoomStay>
+            </RoomStays>
+            <ResGuests>
+                <ResGuest ResGuestRPH="1">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile ProfileType="1">
+                                <Customer>
+                                    <PersonName>
+                                        <GivenName>John</GivenName>
+                                        <Surname>Doe</Surname>
+                                    </PersonName>
+                                    <Telephone PhoneNumber="+905333212932" />
+                                    <Email>john@example.net</Email>
+                                    <Address>
+                                        <AddressLine />
+                                        <AddressLine />
+                                        <CityName />
+                                        <StateProv></StateProv>
+                                        <CountryName>Turkey</CountryName>
+                                    </Address>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+            </ResGuests>
+            <Services></Services>
+            <ResGlobalInfo>
+                <Guarantee>
+                    <Comments>
+                        <Comment Name="PaymentGatewayName">
+                            <Text>cash</Text>
+                        </Comment>
+                    </Comments>
+                </Guarantee>
+                <Fees>
+                    <Fee TaxInclusive="false" Type="Inclusive" Code="27" Amount="0.0">
+                        <Description Name="Adjustments Total">
+                            <Text>Adjustments Total</Text>
+                        </Description>
+                    </Fee>
+                </Fees>
+                <Total AmountAfterTax="33.0" CurrencyCode="AUD">
+                    <Taxes Amount="3.0">
+                        <TaxDescription>
+                            <Text>Tax</Text>
+                        </TaxDescription>
+                    </Taxes>
+                </Total>
+                <HotelReservationIDs>
+                    <HotelReservationID ResID_Type="14" ResID_Value="R587232632" />
+                </HotelReservationIDs>
+                <Comments>
+                    <Comment>
+                        <Text />
+                    </Comment>
+                </Comments>
+            </ResGlobalInfo>
+        </HotelReservation>
+    </soap:Body>
+</soap:Envelope>
